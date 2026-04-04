@@ -1,0 +1,104 @@
+:root {
+  --r-background-color: #1a1a2e;
+  --r-main-color: #e0e0e0;
+  --r-heading-color: #ff8700;
+  --r-link-color: #ff8700;
+  --r-link-color-hover: #ffab40;
+  --r-selection-background-color: rgba(255, 135, 0, 0.3);
+  --r-heading-font: 'Source Sans Pro', Helvetica, sans-serif;
+  --r-main-font: 'Source Sans Pro', Helvetica, sans-serif;
+  --r-code-font: 'JetBrains Mono', 'Fira Code', monospace;
+  --r-heading-text-transform: none;
+}
+
+/* Title slide styling */
+.reveal h1 {
+  font-size: 2.4em;
+  font-weight: 700;
+  text-shadow: 0 2px 10px rgba(255, 135, 0, 0.3);
+}
+
+.reveal h2 {
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+/* List styling */
+.reveal ul {
+  list-style: none;
+  padding-left: 1em;
+}
+
+.reveal ul li::before {
+  content: '\25B8';
+  color: var(--r-heading-color);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* Code blocks */
+.reveal pre {
+  width: 100%;
+  font-size: 0.55em;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 135, 0, 0.2);
+}
+
+.reveal pre code {
+  font-family: var(--r-code-font);
+  max-height: 600px;
+}
+
+.reveal p code,
+.reveal li code {
+  background: rgba(255, 135, 0, 0.1);
+  border: 1px solid rgba(255, 135, 0, 0.2);
+  border-radius: 4px;
+  padding: 0.1em 0.4em;
+  font-size: 0.85em;
+  color: #ffab40;
+}
+
+/* Slide transitions */
+.reveal .slides section {
+  text-align: left;
+}
+
+.reveal .slides section h1,
+.reveal .slides section h2 {
+  text-align: center;
+  text-transform: unset;
+}
+
+/* Progress bar */
+.reveal .progress span {
+  background: var(--r-heading-color);
+}
+
+/* Controls */
+.reveal .controls {
+  color: var(--r-heading-color);
+}
+
+/* Slide number */
+.reveal .slide-number {
+  color: rgba(255, 135, 0, 0.6);
+  font-size: 0.6em;
+}
+
+/* Bold text accent */
+.reveal strong {
+  color: var(--r-heading-color);
+}
+
+/* Blockquote */
+.reveal blockquote {
+  border-left: 4px solid var(--r-heading-color);
+  background: rgba(255, 135, 0, 0.05);
+  padding: 0.5em 1em;
+  border-radius: 0 8px 8px 0;
+  font-style: normal;
+}
