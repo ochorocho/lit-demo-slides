@@ -1,4 +1,4 @@
-## ... and what are WebComponents?
+# ... and what are WebComponents?
 
 **In short:**
 

@@ -1,9 +1,10 @@
 # Translate labels
 
+Load labels from
+`EXT:lit_demo/Resources/Private/Language/locallang_components.xlf`
+
 ```js
 import {LitElement, html} from 'lit';
-// Load labels from
-// EXT:lit_demo/Resources/Private/Language/locallang_components.xlf
 import componentLabels from '~labels/lit_demo.components'
 
 export class TranslateExample extends LitElement {
