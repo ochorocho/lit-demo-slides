@@ -10,7 +10,6 @@ The corresponding JavaScript:
 import {LitElement, html} from 'lit';
 
 export class Typo3Surfcamp extends LitElement {
-
     static properties = {
         year: {type: Number, attribute: 'year'},
     };

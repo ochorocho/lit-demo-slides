@@ -13,3 +13,17 @@ A few more traps for developers:
 * **Await `this.updateComplete`** to wait for the DOM to
   reflect the latest state. Useful in tests and after
   programmatic property changes.
+* **Boolean** indicates only if the attribute exists. It doesn't care about the value.
+```js
+export class MyElement extends LitElement {
+    static properties = {
+        new: {type: Boolean, attribute: 'new'},
+    };
+    
+    constructor() {
+      super();
+      this.new = true // ⚠️ Always true ⚠️ 
+    }
+    // ...
+}
+```

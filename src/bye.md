@@ -1,3 +1,4 @@
 # Thank you!
 
-Want to play? See https://github.com/ochorocho/lit_demo
+* Demo extension https://github.com/ochorocho/lit_demo
+* Slides https://ochorocho.github.io/lit-demo-slides/
